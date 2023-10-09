@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>todobynode</title>
+        <link href="/assets/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <h2>To-do List by Node.js</h2>
+        <div id="todo-table">
+            <form>
+                <input type="text" name="item" placeholder="Add a new item ..." required>
+                <button type="submit">Add Item</button>
+            </form>
+            <ul>            
+                <% todos.forEach(function(val){ %>
+                    <li> <%= val.item %> </li>
+                <% }); %>
+            </ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+        <script src="../public/assets/todo-list.js"></script>
+    </body>
+</html>
